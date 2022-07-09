@@ -1,2 +1,23 @@
+#https
 server:
-  port: 8000
+  port: 443
+  http-port: 8888
+  ssl:
+    enabled: true
+    key-store: classpath:svarsity.cn.jks
+    key-store-type: JKS
+    key-alias: svarsity.cn
+    key-store-password: Wanghaijun@qq149
+    key-password: Wanghaijun@qq149
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://1.117.74.236:3306/varsity?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: demo1
+    password: Demo123456.
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
