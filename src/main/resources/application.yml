@@ -1,14 +1,7 @@
 #https
 server:
-  port: 443
-  http-port: 8888
-  ssl:
-    enabled: true
-    key-store: classpath:svarsity.cn.jks
-    key-store-type: JKS
-    key-alias: svarsity.cn
-    key-store-password: Wanghaijun@qq149
-    key-password: Wanghaijun@qq149
+  port: 8888
+
 
 spring:
   datasource:
@@ -21,3 +14,8 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+
+
+
+
+
