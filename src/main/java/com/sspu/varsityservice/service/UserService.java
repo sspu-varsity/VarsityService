@@ -5,5 +5,5 @@ import com.sspu.varsityservice.pojo.User;
 
 public interface UserService {
 
-    public User searchUser(int id);
+    public User userLogin(String userCode,String userPassWord);
 }

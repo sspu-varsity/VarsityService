@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sspu.varsityservice.mapper.MassagesMapper">
+    <select id="getAllMassages" resultType="com.sspu.varsityservice.pojo.Massages">
+        select * from  v_community limit #{index},${(index+5)}
+    </select>
+</mapper>

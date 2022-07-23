@@ -15,8 +15,8 @@ public class UserController {
     UserServiceImpl userService;
 
 
-    @RequestMapping("/searchUser")
-    public User searcherUser(@RequestParam("id") int id){
-        return userService.searchUser(id);
+    @RequestMapping("/userLogin")
+    public User searcherUser(@RequestParam("userCode") String userCode,@RequestParam("userPassWord") String userPassWord){
+        return userService.userLogin(userCode,userPassWord);
     }
 }

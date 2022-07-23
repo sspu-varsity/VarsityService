@@ -15,6 +15,9 @@ public class User {
     private String userCode;
     private String userPassWord;
     private String userName;
+    private String userClass;
+    private String userAcademy;
+    private String userMajor;
 
 
 }
